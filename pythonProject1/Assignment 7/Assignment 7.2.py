@@ -48,3 +48,17 @@ print(f'Confusion Matrix Gini: {dt_gini_conf}')
 
 dt_gini_class = classification_report(y_test, y_pred_gini)
 print(f'Classification Report Gini: {dt_gini_class}')
+
+'''
+The entropy model made 6 mistakes in both directions—wrongly labeling positives and missing actual positives. 
+The gini model also made 6 false positives but only 4 false negatives, meaning it was a bit better at spotting class 1.
+
+For class 0, both models made the same number of mistakes (6 false positives).
+
+Overall, the gini model did a better job, with 88% accuracy, compared to 85% for entropy.
+
+Gini was a little more accurate when identifying negatives (class 0) and slightly better at recognizing class 1.
+
+
+
+'''

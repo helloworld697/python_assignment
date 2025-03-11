@@ -43,7 +43,15 @@ print(f'Classification Report (Kernel=RBF): {class_report_rbf}')
 
 
 '''
-Comparing two SVM Model:
+Both models did a great job, but there’s a small difference in how they performed:
+
+    The Linear model made two small mistakes, misclassifying two cases as positive when they weren’t. This gave it 99% accuracy, which is still really good, but not quite perfect.
+    The RBF model got every single prediction right—100% accuracy—meaning it didn’t make any mistakes at all.
+Why did this happen?
+
+    The Linear model tries to separate the data using a straight line. It worked well, but a couple of points didn’t fit perfectly.
+    The RBF model is more flexible and can draw curved boundaries, making it better at handling complex patterns. In this case, it perfectly separated everything.
+    Since the RBF model got a perfect score, it suggests that a straight-line approach wasn’t enough, and a more flexible method was the best fit for this data.
 
 
 '''
