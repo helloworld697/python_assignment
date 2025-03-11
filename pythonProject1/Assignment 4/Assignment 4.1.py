@@ -17,16 +17,21 @@ for n in n_values:
     h, h2 = np.histogram(s, bins=range(2, 14))
 
     # Step 3: Plot histogram
+    print(f's: {s}')
+    print(f'h: {h}')
+    print(f'h2: {h2}')
+    print('---------------------------------------------------------------------------------')
 
-    plt.bar(h2[:-1], h / n, align='center')
-    plt.xlabel('Sum of Two Dice')
-    plt.ylabel('Frequency')
-    plt.title(f'Histogram of Two Dice Sums (n={n})')
-    plt.xticks(range(2, 13))
-    plt.show()
+
+    #plt.bar(h2[:-1], h / n, align='center')
+    # plt.xlabel('Sum of Two Dice')
+    # plt.ylabel('Frequency')
+    # plt.title(f'Histogram of Two Dice Sums (n={n})')
+    # plt.xticks(range(2, 13))
+    # plt.show()
 
 # Adding the result at the top of each bar
-for x, y in zip(h2[:-1], h / n):
-    plt.text(x, y, f"{y * 100:.1f}%", ha='center', va='bottom')
-
-plt.show()
+# for x, y in zip(h2[:-1], h / n):
+#     plt.text(x, y, f"{y * 100:.1f}%", ha='center', va='bottom')
+#
+# plt.show()

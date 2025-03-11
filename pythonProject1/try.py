@@ -1,17 +1,14 @@
-def tester(givenstring):
-    if givenstring == "quit":
-        break
-    elif len(givenstring) < 10:
-        print("Too short")
-    else:
-        print(givenstring)
-    return givenstring
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('TkAgg')
 
-def main():
-    givenstring = input("Writesomething(quit ends):")
-    tester(givenstring)
-   # if givenstring == "quit":
+x = [2020, 2021, 2022,2023,2024 ]
+y = [10000, 20000, 25000, 30000, 40000]
+plt.plot(x, y, color="#672622", marker="o",linestyle=":",linewidth=1)
+plt.xlabel('Year')
+plt.ylabel('sales')
+plt.title('Graph of sales in last five years')
+plt.show()
 
 
-if __name__ == "__main__":
-    main()
+
